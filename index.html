@@ -1,20 +1,65 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Discípulo de Cristo</title>
+    <title>Discípulos de Cristo</title>
     <link rel="stylesheet" href="styles.css">
+    <!-- Se for usar ícones (como Font Awesome): -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"> -->
 </head>
 <body>
-    <header id="header"></header>
+
+    <header>
+        <div class="header-container">
+            <span class="site-title">Discípulos de Cristo</span>
+            <div class="header-actions">
+                <input type="search" placeholder="Buscar... Ctrl+K" aria-label="Buscar no site">
+                <button class="menu-toggle" aria-label="Abrir menu">
+                    ☰ <!-- Ícone de menu (hambúrguer) simples -->
+                    <!-- Ou usando Font Awesome: <i class="fas fa-bars"></i> -->
+                </button>
+            </div>
+        </div>
+    </header>
+
     <main>
-        <h1>Bem-vindo ao Discípulo de Cristo</h1>
-        <p>Este é um site dedicado a compartilhar a mensagem de Cristo.</p>
+        <section class="daily-verse-section">
+            <div class="section-header">
+                <h2>Versículo do Dia</h2>
+                <!-- Você pode gerar a data dinamicamente com JS ou colocar estática -->
+                <div class="date-display">
+                    <span class="day-of-week">Quarta</span>
+                    <span class="day-number">23</span>
+                    <span class="month">Abr</span>
+                </div>
+            </div>
+
+            <article class="verse-card">
+                <blockquote class="verse-text">
+                    "Porque Deus amou o mundo de tal maneira que deu o seu Filho unigênito,
+                    para que todo aquele que nele crê não pereça, mas tenha a vida eterna."
+                </blockquote>
+                <p class="verse-reference">
+                    <a href="#">João 3:16</a> <!-- Link opcional para o capítulo -->
+                    <button class="share-button" aria-label="Compartilhar versículo">
+                        <!-- Ícone de link/compartilhar simples -->
+                       <!-- Ou usando Font Awesome: <i class="fas fa-share-alt"></i> -->
+                    </button>
+                </p>
+            </article>
+
+            <!-- Se quiser adicionar mais conteúdo depois, pode vir aqui -->
+
+        </section>
     </main>
+
     <footer>
-        <p>&copy; 2025 Discípulo de Cristo. Todos os direitos reservados.</p>
+        <p>© 2025 Discípulos de Cristo. Todos os direitos reservados.</p>
+         <!-- Corrigi o ano para 2024 -->
     </footer>
-    <script src="script.js"></script>
+
+    <!-- Se precisar de JavaScript para menu, data, etc. -->
+    <!-- <script src="script.js"></script> -->
 </body>
 </html>
