@@ -1,0 +1,22 @@
+{
+  "name": "discipulo-de-cristo",
+  "version": "1.0.0",
+  "description": "Um site dedicado a compartilhar a mensagem de Cristo.",
+  "main": "public/index.html",
+  "scripts": {
+    "start": "live-server public",
+    "build": "echo 'Build step not defined'",
+    "test": "echo 'No tests specified'"
+  },
+  "keywords": [
+    "Cristo",
+    "religião",
+    "site"
+  ],
+  "author": "Seu Nome",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "live-server": "^1.2.1"
+  }
+}
